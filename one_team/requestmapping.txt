@@ -1,0 +1,39 @@
+one.project.mall.board  	//게시판
+one.project.mall.user		//회원, 주소, 가입, 탈퇴
+one.project.mall.comment	//게시판 댓글
+one.project.mall.models		//VO.
+one.project.mall.items		//물품(리스트, 셀렉...)
+one.project.mall.main		//메인화면
+one.project.mall.
+
+------------------------------------------------------------------------------------------------
+
+Controller
+
+
+/board		: 게시판 번호/페이지/게시물 번호/action 
+
+/comment	: 게시판 번호/게시물 번호/댓글 페이지/action or 댓글 번호(input hidden)
+
+/user		: /action
+
+
+/items		: 구단번호/카테고리 번호/물품 번호 
+
+/items(관리자)	: 구단번호/카테고리 번호/물품 번호/action
+
+
+------------------------------------------------------------------------------------------------
+
+/Views		: result, main default
+
+/member		: 회원 가입, 로그인 등등
+
+/board		: 게시판 관련 CRUD 전부
+
+/comment	: 댓글
+
+/order		: 주문 / 결재 관련
+
+/admin		: 관리자 다 때려박아
+/product	: 상품 CRUD / 제품 List 출력
