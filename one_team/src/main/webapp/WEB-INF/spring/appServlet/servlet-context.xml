@@ -23,18 +23,6 @@
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
 	
-	
-	<!-- oxm -->
-	<beans:bean
-		class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
-		<beans:property name="messageConverters">
-			<beans:list>
-				<beans:ref bean="jsonConverter" />
-				<beans:ref bean="marshallingConverter" />
-			</beans:list>
-		</beans:property>
-	</beans:bean>
-	
 	<beans:bean id="jsonConverter"
 		class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter">
 		<beans:property name="supportedMediaTypes" value="application/json" />
@@ -50,27 +38,21 @@
 		class="org.springframework.oxm.jaxb.Jaxb2Marshaller">
 		<beans:property name="classesToBeBound">
 			<beans:list>
-				<beans:value>kr.co.oraclejava.board.UserVO</beans:value>
-				<beans:value>kr.co.oraclejava.board.BoardVO</beans:value>
-				<beans:value>kr.co.oraclejava.board.BoardCommentVO</beans:value>
+				<beans:value>one.project.mall.models.BoardVO</beans:value>
+				<beans:value>one.project.mall.models.MemberVO</beans:value>
+				<beans:value>one.project.mall.models.BoardInfoVO</beans:value>
+				<beans:value>one.project.mall.models.CartVO</beans:value>
+				<beans:value>one.project.mall.models.ClubVO</beans:value>
+				<beans:value>one.project.mall.models.CommentVO</beans:value>
+				<beans:value>one.project.mall.models.OrderVO</beans:value>
+				<beans:value>one.project.mall.models.ProductVO</beans:value>
+				<beans:value>one.project.mall.models.PurchaseVO</beans:value>
+				<beans:value>one.project.mall.models.ZipcodeVO</beans:value>
 			</beans:list>
 		</beans:property>
 	</beans:bean>
 	
 	<context:component-scan base-package="one.project.mall" />
 	<context:property-placeholder location="/WEB-INF/*.properties"/>
-	
-	<beans:bean
-		class="org.springframework.web.servlet.view.ContentNegotiatingViewResolver">
-		<beans:property name="mediaTypes">
-			<beans:map>
-				<beans:entry key="json" value="application/json" />
-				<beans:entry key="xml" value="text/xml" />
-				<beans:entry key="htm" value="text/html" />
-				<beans:entry key="html" value="text/html" />
-			</beans:map>
-		</beans:property>
-		<beans:property name="defaultContentType" value="text/html"></beans:property>
-	</beans:bean>
 	
 </beans:beans>
