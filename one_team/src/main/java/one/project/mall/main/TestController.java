@@ -11,4 +11,9 @@ public class TestController {
 	public String index() {
 		return "main";
 	}
+	
+	@RequestMapping(value = "/mainAction")
+	public String indexAction() {
+		return "mainAction";
+	}
 }

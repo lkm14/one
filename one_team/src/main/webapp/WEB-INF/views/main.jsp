@@ -7,6 +7,9 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <link rel="stylesheet" href="<c:url value="/resources/css/main.css" />" type="text/css" />
+<script type="text/javascript">
+
+</script>
 </head>
 <body>
 
@@ -16,6 +19,7 @@
 
 		<h2>
 			<i>ONE</i>
+			<div class="getCookie" />
 		</h2>
 
 		<!-- header -->
