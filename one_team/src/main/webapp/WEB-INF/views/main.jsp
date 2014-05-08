@@ -6,69 +6,55 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<link rel="stylesheet" href="<c:url value="/resources/css/main.css" />" type="text/css" />
-<script type="text/javascript">
-
-</script>
+<link rel="stylesheet" href="<c:url value="/resources/css/main.css" />"
+	type="text/css" />
 </head>
 <body>
 
-	<!-- UI Object -->
-
 	<div id="wrap">
-
-		<h2>
-			<i>ONE</i>
-			<div class="getCookie" />
-		</h2>
-
+		<h1>
+			I <font color="#F15F5F">♥</font> BASEBALL
+		</h1>
+		<form action="#">
+		<fieldset class="srch">
+				<legend>검색영역</legend>
+				<select>
+					<option>상품명</option>
+					<option>구단명</option>
+				</select> 
+				<input title="검색어" class="keyword" accesskey="s" type="text">
+				<input type="image" alt="검색" src="<c:url value="/resources/image/btn_srch.gif" />">
+			</fieldset>
+		</form>
 		<!-- header -->
 
 		<div id="header">
 			<jsp:include page="header.jsp" />
 		</div>
-
 		<!-- //header -->
-
 		<!-- container -->
 		<div id="container">
-
-			<p>#container</p>
-
-			<!-- snb -->
-			<div class="snb">
-				<span>환영합니다.</span>
-				<jsp:include page="left.jsp" />
+			<!-- 메인이미지 -->
+			<div id="main_img">
+				<img src='<c:url value="/resources/image/main.jpg" />'
+					height="200px" width="1252px">
 			</div>
-			<!-- //snb -->
+			<!-- 레프트 메뉴 -->
+			<div class="snb">
+				<jsp:include page="left1.jsp" />
+			</div>
+			<!-- //레프트 메뉴 종료 -->
 
 			<!-- content -->
-
-			<div id="content">
-
-				<p>#content</p>
-
-			</div>
-
-			<!-- //content -->
-
+			<div id="content">내용 들어오는 부분</div>
 		</div>
-
-		<!-- //container -->
+		<!-- container 종료 -->
 
 		<!-- footer -->
-
 		<div id="footer">
-
-			<p>#footer</p>
-
+			<jsp:include page="footer.jsp" />
 		</div>
-
 		<!-- //footer -->
-
 	</div>
-
-	<!-- //UI Object -->
-
 </body>
 </html>

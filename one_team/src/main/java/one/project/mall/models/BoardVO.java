@@ -4,23 +4,24 @@ import java.io.Serializable;
 
 public class BoardVO implements Serializable{
 	
-	private int board_bno;				// º¸µå¹øÈ£ : ¿ÜºÎÅ°
-	private long board_no;				// °Ô½Ã¹° ¹øÈ£ : ±âº»Å°
-	private String board_title;			// °Ô½Ã¹° Á¦¸ñ
-	private String board_content;		// °Ô½Ã¹° ³»¿ë
-	private String board_regdate;		// °Ô½Ã¹° ÀÛ¼º½Ã°£
-	private int board_count;			// °Ô½Ã¹° Á¶È¸¼ö
-	private MemberVO memberVO;			// È¸¿ø id, nameµî ¹Þ¾Æ¿À±âÀ§ÇÑ memberVO
+	private int boardInfo_bno;				// ï¿½ï¿½ï¿½ï¿½ï¿½È£ : ï¿½Üºï¿½Å°
+	private long board_no;				// ï¿½Ô½Ã¹ï¿½ ï¿½ï¿½È£ : ï¿½âº»Å°
+	private String board_title;			// ï¿½Ô½Ã¹ï¿½ ï¿½ï¿½ï¿½ï¿½
+	private String board_content;		// ï¿½Ô½Ã¹ï¿½ ï¿½ï¿½ï¿½ï¿½
+	private String board_regdate;		// ï¿½Ô½Ã¹ï¿½ ï¿½Û¼ï¿½ï¿½Ã°ï¿½
+	private int board_count;			// ï¿½Ô½Ã¹ï¿½ ï¿½ï¿½È¸ï¿½ï¿½
+	private MemberVO memberVO;			// È¸ï¿½ï¿½ id, nameï¿½ï¿½ ï¿½Þ¾Æ¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ memberVO
 	
-	private int product_no;				// Á¦Ç° ¹øÈ£ : ¿ÜºÎÅ°
-	private String board_re_ref;		// °Ô½Ã¹° ´ä±Û
-	private int board_re_lev;			// °Ô½Ã¹° ´ä±Û ·¹º§
-	private int board_re_seq;			// °Ô½Ã¹° ´ä±Û ¼ø¼­
+	private int product_no;				// ï¿½ï¿½Ç° ï¿½ï¿½È£ : ï¿½Üºï¿½Å°
+	private String board_re_ref;		// ï¿½Ô½Ã¹ï¿½ ï¿½ï¿½ï¿½
+	private int board_re_lev;			// ï¿½Ô½Ã¹ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+	private int board_re_seq;			// ï¿½Ô½Ã¹ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½
+	
 	public int getBoard_bno() {
-		return board_bno;
+		return boardInfo_bno;
 	}
 	public void setBoard_bno(int board_bno) {
-		this.board_bno = board_bno;
+		this.boardInfo_bno = board_bno;
 	}
 	public long getBoard_no() {
 		return board_no;
@@ -84,7 +85,7 @@ public class BoardVO implements Serializable{
 	}
 	@Override
 	public String toString() {
-		return "BoardVO [board_bno=" + board_bno + ", board_no=" + board_no
+		return "BoardVO [board_bno=" + boardInfo_bno + ", board_no=" + board_no
 				+ ", board_title=" + board_title + ", board_content="
 				+ board_content + ", board_regdate=" + board_regdate
 				+ ", board_count=" + board_count + ", memberVO=" + memberVO

@@ -4,13 +4,13 @@ import java.io.Serializable;
 
 public class PurchaseVO implements Serializable{
 	
-	private long purchase_no; 			// ±¸¸Å ¹øÈ£ : ±âº»Å°
-	private String purchase_regdate;	// ±¸¸Å ³¯Â¥
-	private int purchase_count;			// ±¸¸Å ¼ö·®
-	private String purchase_size;		// ±¸¸Å »çÀÌÁî
-	private String purchase_color;		// ±¸¸Å »ö»ó
-	private String purchase_bank;		// ±¸¸Å ÀºÇà
-	private String member_id;			// ±¸¸ÅÀÚ : ´ëÃ¼Å°
-	private long product_no;			// »óÇ° ¹øÈ£ : ´ëÃ¼Å°
+	private long purchase_no; 			// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È£ : ï¿½âº»Å°
+	private String purchase_regdate;	// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Â¥
+	private int purchase_count;			// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+	private String purchase_size;		// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	private String purchase_color;		// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+	private String purchase_bank;		// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+	private String member_id;			// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ : ï¿½ï¿½Ã¼Å°
+	private long product_no;			// ï¿½ï¿½Ç° ï¿½ï¿½È£ : ï¿½ï¿½Ã¼Å°
 	
 }

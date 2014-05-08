@@ -4,10 +4,10 @@ import java.io.Serializable;
 import java.util.List;
 
 public class OrderVO implements Serializable {
-	private long order_no;					// ÁÖ¹® ¹øÈ£ : ±âº»Å°
-	private String order_regdate;			// ÁÖ¹® ³¯Â¥
-	private int order_money;				// ÁÖ¹® °¡°Ý
-	private List<PurchaseVO> purchaseVO;	// ±¸¸ÅÇÑ°Å
+	private long order_no;					// ï¿½Ö¹ï¿½ ï¿½ï¿½È£ : ï¿½âº»Å°
+	private String order_regdate;			// ï¿½Ö¹ï¿½ ï¿½ï¿½Â¥
+	private int order_money;				// ï¿½Ö¹ï¿½ ï¿½ï¿½ï¿½ï¿½
+	private List<PurchaseVO> purchaseVO;	// ï¿½ï¿½ï¿½ï¿½ï¿½Ñ°ï¿½
 	
 	
 }

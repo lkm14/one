@@ -1,19 +1,18 @@
 package one.project.mall.models;
-
 import java.io.Serializable;
 
 public class ProductVO implements Serializable {
 	
-	private long product_no;			// »óÇ° ¹øÈ£ : ±âº»Å°
-	private int product_price;			// »óÇ° °¡°Ý
-	private String product_color;		// »óÇ° »ö»ó
-	private String product_size;		// »óÇ° »çÀÌÁî
-	private int product_stock;			// »óÇ° Àç°í·®
-	private String product_name;		// »óÇ° ÀÌ¸§
-	private String product_content;		// »óÇ° ³»¿ë
-	private String product_image;		// »óÇ° ÀÌ¹ÌÁö °æ·Î
-	private int club_no;				// ±¸´Ü ¹øÈ£ : ¿ÜºÎÅ°
-	private int category_no;			// Ä«Å×°í¸® ¹øÈ£ : ¿ÜºÎÅ°
+	private long product_no;			// ï¿½ï¿½Ç° ï¿½ï¿½È£ : ï¿½âº»Å°
+	private int product_price;			// ï¿½ï¿½Ç° ï¿½ï¿½ï¿½ï¿½
+	private String product_color;		// ï¿½ï¿½Ç° ï¿½ï¿½ï¿½ï¿½
+	private String product_size;		// ï¿½ï¿½Ç° ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	private int product_stock;			// ï¿½ï¿½Ç° ï¿½ï¿½?
+	private String product_name;		// ï¿½ï¿½Ç° ï¿½Ì¸ï¿½
+	private String product_content;		// ï¿½ï¿½Ç° ï¿½ï¿½ï¿½ï¿½
+	private String product_image;		// ï¿½ï¿½Ç° ï¿½Ì¹ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
+	private int club_no;				// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È£ : ï¿½Üºï¿½Å°
+	private int category_no;			// Ä«ï¿½×°? ï¿½ï¿½È£ : ï¿½Üºï¿½Å°
 	
 	public long getProduct_no() {
 		return product_no;

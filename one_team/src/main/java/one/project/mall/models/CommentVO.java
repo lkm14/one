@@ -4,11 +4,11 @@ import java.io.Serializable;
 
 public class CommentVO implements Serializable {
 	
-	private long comment_cno;			// comment ¹øÈ£ ±âº»Å°
-	private String comment_regdate;		// ÀÛ¼º½Ã°£
-	private String comment_content;		// ³»¿ë
-	private String member_id;			// ÀÛ¼ºÀÚ : ¿ÜºÎÅ°
-	private int boardInfo_bno;			// °Ô½ÃÆÇ¹øÈ£ : ¿ÜºÎÅ°
+	private long comment_cno;			// comment ï¿½ï¿½È£ ï¿½âº»Å°
+	private String comment_regdate;		// ï¿½Û¼ï¿½ï¿½Ã°ï¿½
+	private String comment_content;		// ï¿½ï¿½ï¿½ï¿½
+	private String member_id;			// ï¿½Û¼ï¿½ï¿½ï¿½ : ï¿½Üºï¿½Å°
+	private int boardInfo_bno;			// ï¿½Ô½ï¿½ï¿½Ç¹ï¿½È£ : ï¿½Üºï¿½Å°
 	public long getComment_cno() {
 		return comment_cno;
 	}

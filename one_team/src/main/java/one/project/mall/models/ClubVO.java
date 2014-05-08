@@ -3,8 +3,8 @@ package one.project.mall.models;
 import java.io.Serializable;
 
 public class ClubVO implements Serializable {
-	private int club_no;		// ±¸´Ü ¹øÈ£
-	private String club_name;	// ±¸´Ü ÀÌ¸§
+	private int club_no;		// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È£
+	private String club_name;	// 
 	
 	public int getClub_no() {
 		return club_no;

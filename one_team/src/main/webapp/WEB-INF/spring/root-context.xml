@@ -2,30 +2,26 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-	
+
 	<!-- Root Context: defines shared resources visible to all other web components -->
-	
-<!-- 	Database Connection -->
-	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource" >
-		<property name="driverClassName" value="net.sf.log4jdbc.DriverSpy"></property>
-		<property name="url" value="jdbc:log4jdbc:oracle:thin:@localhost:1521:xe"></property>
-		<property name="username" value="oraclejava"></property>
-		<property name="password" value="oraclejava"></property>
+	<!-- DB세팅 -->
+	<bean id="dataSource"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="net.sf.log4jdbc.DriverSpy" />
+		<property name="url" value="jdbc:log4jdbc:oracle:thin:@localhost:1521:xe" />
+		<property name="username" value="oraclejava" />
+		<property name="password" value="oraclejava" />
 	</bean>
 	
-<!-- mybatis start -->
-	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean" >
+	<!-- Mybatis 세팅 -->
+	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="dataSource" ref="dataSource" />
-		<property name="typeAliasesPackage" value="one.project.mall" />
+		<property name="typeAliasesPackage" value="one.project.mall.models"></property>
 	</bean>
-	
-	<bean id="memberMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
-		<property name="mapperInterface" value="one.project.mall.member.MemberMapper" />
+	<bean id="UserMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
+		<!-- boardDAO 역할 -->
+		<property name="mapperInterface" value="one.project.mall.member.mapper.UserMapper" />
 		<property name="sqlSessionFactory" ref="sqlSessionFactory" />
 	</bean>
-	
-	<bean id="boardMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
-		<property name="mapperInterface" value="one.project.mall.board.BoardMapper" />
-		<property name="sqlSessionFactory" ref="sqlSessionFactory" />
-	</bean>
+	<!-- Mybatis 세팅 종료 -->
 </beans>

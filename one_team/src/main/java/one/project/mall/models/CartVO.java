@@ -3,14 +3,14 @@ package one.project.mall.models;
 import java.io.Serializable;
 
 public class CartVO implements Serializable {
-//	private long cart_no;			// Àå¹Ù±¸´Ï ¹øÈ£ : ±âº»Å°
-	private String cart_regdate;	// Àå¹Ù±¸´Ï ´ãÀº ³¯Â¥
-	private int cart_quantify;		// ±¸¸Å ¼ö·®
-	private String cart_size;		// ±¸¸Å »çÀÌÁî
-	private String cart_color;		// ±¸¸Å »ö»ó
+//	private long cart_no;			// ï¿½ï¿½Ù±ï¿½ï¿½ï¿½ ï¿½ï¿½È£ : ï¿½âº»Å°
+	private String cart_regdate;	// ï¿½ï¿½Ù±ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Â¥
+	private int cart_quantify;		// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+	private String cart_size;		// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	private String cart_color;		// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	
-	private String member_id;		// Àå¹Ù±¸´Ï ´ãÀº È¸¿ø ¾ÆÀÌµð : ´ëÃ¼Å°
-	private long product_no;		// Àå¹Ù±¸´Ï ´ãÀº ¹°Ç° ¹øÈ£ : ´ëÃ¼Å°
+	private String member_id;		// ï¿½ï¿½Ù±ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ È¸ï¿½ï¿½ ï¿½ï¿½ï¿½Ìµï¿½ : ï¿½ï¿½Ã¼Å°
+	private long product_no;		// ï¿½ï¿½Ù±ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ç° ï¿½ï¿½È£ : ï¿½ï¿½Ã¼Å°
 	
 	
 	
