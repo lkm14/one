@@ -17,21 +17,26 @@
 					<li class="m2"><a href="#"><span>야구 상품</span></a>
 						<div class="sub">
 							<ul>
-								<li><a href="#"><span>두산베어스 상품</span></a></li>
-								<li><a href="#"><span>삼성라이온즈 상품</span></a></li>
-								<li><a href="#"><span>기아타이거즈 상품</span></a></li>
-								<li><a href="#"><span>넥센히어로즈 상품</span></a></li>
+								<li><a href="<c:url value='/product/1/1/1/'/>"><span>두산베어스 상품</span></a></li>
+								<li><a href="<c:url value='/product/2/1/1/'/>"><span>삼성라이온즈 상품</span></a></li>
+								<li><a href="<c:url value='/product/3/1/1/'/>"><span>기아타이거즈 상품</span></a></li>
+								<li><a href="<c:url value='/product/4/1/1/'/>"><span>넥센히어로즈 상품</span></a></li>
 							</ul>
 						</div></li>
-					<li class="m4"><a href="#"><span>공지사항</span></a></li>
-					<li class="m3"><a href="#"><span>자유게시판</span></a></li>
-					<li class="m4"><a href="#"><span>질문게시판</span></a></li>
+					<li class="m4"><a href="<c:url value='/board/1/1/'/>"><span>공지사항</span></a></li>
+					<li class="m3"><a href="<c:url value='/board/2/1/'/>"><span>자유게시판</span></a></li>
+					<li class="m4"><a href="<c:url value='/board/3/1/'/>"><span>질문게시판</span></a></li>
 				</ul>
 			</div>
 			<div class="aside">
 				<ul>
 					<!-- 	<li class="m1"><a href="#"><span>관리자</span></a></li> -->
-					<li class="m2"><a href="#"><span>로그아웃</span></a></li>
+					<%
+					String user_id = (String) session.getAttribute("user");
+					if (user_id != null) {
+					%>
+					<li class="m2"><a href="<c:url value="/member/logout"/>"><span>로그아웃</span></a></li>
+					<%}%>
 					<li class="m2"><a href="#"><span>마이페이지</span></a></li>
 					<li class="m2"><a href="#"><span>장바구니</span></a></li>
 				</ul>

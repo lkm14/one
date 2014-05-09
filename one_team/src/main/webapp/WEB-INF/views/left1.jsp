@@ -10,19 +10,19 @@
 <body>
 	<div class="g_login" id="login">
 	   <h1><center><font color="#B2CCFF"><i>Member Login</i></font></center></h1>
-		<form class="g_login" id="g_login" action="user/login">
+		<form class="g_login" id="g_login" action='<c:url value="/member/login"/>' method="POST">
 		 <fieldset>
 				<legend>회원로그인</legend>
 				<div class="item">
 					<label class="i_label"
 						style="visibility: visible; position: absolute;" for="uid">ID</label><input
-						class="i_text uid" id="uid" type="text" value="">
+						class="i_text uid"  type="text" value="" name="member_id" id="member_id"> 
 				</div>
 				<div class="item">
 
 					<label class="i_label"
 						style="visibility: visible; position: absolute;" for="upw">PASSWORD</label><input
-						class="i_text upw" id="upw" type="password" value="">
+						class="i_text upw"  type="password" value="" name="member_pwd" id="member_pwd">
 				</div>
 				<p class="keeping">
 					<input class="i_check" id="keepid" type="checkbox" value=""><label
@@ -30,7 +30,7 @@
 						class="login_ok">
 				</p>
 				<ul class="help">
-					<li class="first"><a href="#">아이디/비밀번호 찾기</a></li>
+					<li class="first"><a href="#">아이디 찾기</a>/<a href="#">비밀번호 찾기</a></li>
 					<li><a href='<c:url value="/member/regist"/>'>회원 가입</a></li>
 				</ul>
 			</fieldset> 
@@ -40,10 +40,10 @@
 		 <center><font color="#D1B2FF"><b>Menu Category</b></font></center>
 	</h1>
    <div id="left_menu1">
-		<a href="#"><img src='<c:url value="/resources/image/left1.jpg" />' height="70px" width="330px"></a>
-		<a href="#"><img src='<c:url value="/resources/image/left2.jpg" />' height="70px" width="330px"></a>
-		<a href="#"><img src='<c:url value="/resources/image/left3.jpg" />' height="70px" width="330px"></a>
-		<a href="#"><img src='<c:url value="/resources/image/left4.jpg" />' height="70px" width="330px"></a>
+		<a href="<c:url value='/product/1/1/1/'/>"><img src='<c:url value="/resources/image/left1.jpg" />' height="70px" width="330px"></a>
+		<a href="<c:url value='/product/2/1/1/'/>"><img src='<c:url value="/resources/image/left2.jpg" />' height="70px" width="330px"></a>
+		<a href="<c:url value='/product/1/1/1/'/>"><img src='<c:url value="/resources/image/left3.jpg" />' height="70px" width="330px"></a>
+		<a href="<c:url value='/product/1/1/1/'/>"><img src='<c:url value="/resources/image/left4.jpg" />' height="70px" width="330px"></a>
 		<img src='<c:url value="/resources/image/leftend.jpg" />' height="360px" width="330px">
 	</div> 
 	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>

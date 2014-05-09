@@ -2,7 +2,7 @@ package one.project.mall.member.service;
 
 import java.util.List;
 
-import one.project.mall.member.mapper.UserMapper;
+import one.project.mall.member.mapper.MemberMapper;
 import one.project.mall.models.MemberVO;
 import one.project.mall.models.ZipcodeVO;
 
@@ -13,22 +13,25 @@ import org.springframework.stereotype.Service;
 public class MemberServiceImpl implements MemberService{
     
 	@Autowired
-	private UserMapper UserMapper;
-
-
+	private MemberMapper MemberMapper;
+    
+	@Override
+	public MemberVO login(MemberVO memberVO) throws Exception {
+		return MemberMapper.login(memberVO);
+	}
 
 	@Override
 	public List<ZipcodeVO> searchZipcode(String area) throws Exception {
-		return UserMapper.searchZipcode(area);
+		return MemberMapper.searchZipcode(area);
 	}
 
 	@Override
 	public void regist(MemberVO memberVO) throws Exception {
-	   UserMapper.regist(memberVO);
+		MemberMapper.regist(memberVO);
 	}
 
 	@Override
 	public MemberVO confirmId(String id) throws Exception {
-		return UserMapper.confirmId(id);
-	}
+		return MemberMapper.confirmId(id);
+	}	
 }

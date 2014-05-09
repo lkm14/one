@@ -12,16 +12,35 @@
 		<property name="username" value="oraclejava" />
 		<property name="password" value="oraclejava" />
 	</bean>
-	
+
 	<!-- Mybatis 세팅 -->
 	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="dataSource" ref="dataSource" />
 		<property name="typeAliasesPackage" value="one.project.mall.models"></property>
 	</bean>
-	<bean id="UserMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
-		<!-- boardDAO 역할 -->
-		<property name="mapperInterface" value="one.project.mall.member.mapper.UserMapper" />
+
+	<bean id="AdminMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
+		<property name="mapperInterface" value="one.project.mall.admin.mapper.AdminMapper" />
+		<property name="sqlSessionFactory" ref="sqlSessionFactory"></property>
+	</bean>
+
+	<bean id="BoardMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
+		<property name="mapperInterface" value="one.project.mall.board.mapper.BoardMapper" />
 		<property name="sqlSessionFactory" ref="sqlSessionFactory" />
 	</bean>
+
+	<bean id="ProductMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
+		<property name="mapperInterface"
+			value="one.project.mall.product.mapper.ProductMapper" />
+		<property name="sqlSessionFactory" ref="sqlSessionFactory" />
+	</bean>
+
+	<bean id="MemberMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
+		<property name="mapperInterface" value="one.project.mall.member.mapper.MemberMapper" />
+		<property name="sqlSessionFactory" ref="sqlSessionFactory" />
+	</bean>
+
+
+
 	<!-- Mybatis 세팅 종료 -->
 </beans>

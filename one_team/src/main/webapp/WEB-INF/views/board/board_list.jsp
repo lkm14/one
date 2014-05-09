@@ -13,25 +13,23 @@
 
 	<div id="wrap">
 		<h1>
-			<a href='<c:url value="/main/"/>'>I <font color="#F15F5F">♥</font>
-				BASEBALL
-			</a>
+			I <font color="#F15F5F">♥</font> BASEBALL
 		</h1>
 		<form action="#">
-			<fieldset class="srch">
+		<fieldset class="srch">
 				<legend>검색영역</legend>
 				<select>
 					<option>상품명</option>
 					<option>구단명</option>
-				</select> <input title="검색어" class="keyword" accesskey="s" type="text">
-				<input type="image" alt="검색"
-					src="<c:url value="/resources/image/btn_srch.gif" />">
+				</select> 
+				<input title="검색어" class="keyword" accesskey="s" type="text">
+				<input type="image" alt="검색" src="<c:url value="/resources/image/btn_srch.gif" />">
 			</fieldset>
 		</form>
 		<!-- header -->
 
 		<div id="header">
-			<jsp:include page="header.jsp" />
+			<jsp:include page="../header.jsp" />
 		</div>
 		<!-- //header -->
 		<!-- container -->
@@ -43,29 +41,18 @@
 			</div>
 			<!-- 레프트 메뉴 -->
 			<div class="snb">
-				<%
-					String user_id = (String) session.getAttribute("user");
-					if (user_id == null) {
-				%>
-				<jsp:include page="left1.jsp" />
-				<%
-					} else {
-				%>
-				<jsp:include page="left2.jsp" />
-				<%
-					}
-				%>
+				<jsp:include page="../left1.jsp" />
 			</div>
 			<!-- //레프트 메뉴 종료 -->
 
 			<!-- content -->
-			<div id="content">내용 들어오는 부분</div>
+			<div id="content">리스트 부분</div>
 		</div>
 		<!-- container 종료 -->
 
 		<!-- footer -->
 		<div id="footer">
-			<jsp:include page="footer.jsp" />
+			<jsp:include page="../footer.jsp" />
 		</div>
 		<!-- //footer -->
 	</div>
